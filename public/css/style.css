@@ -1,0 +1,764 @@
+@font-face {
+    font-family: myfont ;
+    src: url("../fonts/SourceSansPro-Bold.woff");
+    src: url("../fonts/SourceSansPro-Bold.woff2");
+}
+
+@font-face {
+    font-family: Regular ;
+    src: url("../fonts/SourceSansPro-Regular.woff");
+    src: url("../fonts/SourceSansPro-Regular.woff2");
+}
+
+/*Start General Style*/
+* {
+    font-family: myfont;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+/*End General Style*/
+
+/*Start navbar style*/
+.navbar {
+    width: 100%;
+    height: 75px;
+    background-color: #F2F2F2;
+    color: #1a1e21;
+
+
+}
+
+.navbar a {
+
+    color: #1a1e21;
+    font-size: 18px;
+}
+
+.navbar img {
+    padding: 8px 16px;
+    width: 60px;
+    display: block;
+    float: left;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 10px;
+    padding: 5px;
+}
+
+.navbar .left-menu {
+    display: flex;
+    float: left;
+    text-align: left;
+    margin-top: 9px;
+}
+
+.navbar .right-menu {
+    display: flex;
+    float: right;
+    text-align: right;
+    margin-top: 9px;
+}
+
+.right-menu button:last-child {
+    background-color: #04AA6D;
+    color: #FFFFFF;
+!important;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 30px;
+    margin: -10px 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.right-menu button:last-child:hover {
+    background-color: #047a50;
+    transition: 0.5s ease all;
+}
+
+
+.left-menu-hover a:hover {
+    color: #FFFFFF;
+    padding: 15px;
+    border: 3px solid #04AA6D;
+    border-radius: 1px;
+    background-color: #04AA6D;
+    transition: 0.5s ease all;
+
+
+}
+/* drop down menu */
+.show-menu{
+    display: none;
+
+}
+
+ul li:hover > .show-menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 20%;
+    z-index: 999;
+    transition: 0.5s all ease-in-out;
+}
+
+/*drop down menu*/
+
+.navbar i:hover {
+    color: #04AA6D;
+    transition: 0.5s ease all;
+}
+
+.right-menu-hover a:hover {
+    color: #FFFFFF;
+    background-color: #04AA6D;
+    padding: 10px;
+    border: 3px solid #04AA6D;
+    border-radius: 20px;
+    transition: 0.5s ease all;
+}
+
+/*End navbar style*/
+/*Start Section Html*/
+.section-html a {
+    color: #FFFFFF;
+
+}
+
+.section-html .patent {
+    color: #FFFFFF;
+    background-color: #282A35;
+    width: 100%;
+    height: 540px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.section-html .html-left {
+    width: 40%;
+    height: 60%;
+}
+
+.html-left h1 {
+    font-size: 100px;
+    margin: 2px 0px 20px 2px;
+    text-align: center;
+
+}
+
+.html-left p {
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.html-left .btn-top, .html-left .btn-down {
+    margin: 30px auto;
+    display: block;
+    padding: 8px 16px;
+}
+
+.section-html .btn-top {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 18px;
+    width: 150px;
+    border-radius: 25px;
+}
+
+.section-html .btn-down {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    width: 150px;
+    border-radius: 25px;
+}
+
+.section-html .html-right {
+    width: 40%;
+    height: 70%;
+    text-align: left;
+    border-radius: 5px;
+    color: black;
+
+    background-color: #e3e3e3;
+
+}
+
+.html-right p {
+    font-family: Regular;
+    font-size: 24px;
+    padding: 5px;
+    margin: 20px 5px;
+}
+
+.html-right .html-example {
+    width: 95%;
+    height: 220px;
+    border-left: 4px solid #04AA6D;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+
+.html-right a {
+    background-color: #04AA6D;
+    margin: 20px;
+    display: block;
+    width: 32%;
+    text-align: center;
+    padding: 11px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.html-right .text-example {
+    font-family: Regular;
+    padding: 9px;
+    font-size: 16px;
+
+}
+
+.html-right .text-example span {
+    font-family: Regular;
+}
+
+.html-left .btn-top:hover {
+    background-color: #059862;
+
+}
+
+.html-left .btn-down:hover {
+    background-color: #E7E9EB;
+
+}
+
+.html-right .Example a:hover {
+    background-color: #059862;
+
+}
+
+/*End html*/
+/*Section CSS Start*/
+.section-css a {
+    color: #FFFFFF;
+
+}
+
+.section-css .patent {
+    color: #FFFFFF;
+    background-color: #D9EEE1;
+    width: 100%;
+    height: 540px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.section-css .css-left {
+    width: 40%;
+    height: 60%;
+}
+
+.css-left h1 {
+    color: black;
+    font-size: 100px;
+    margin: 2px 0px 20px 2px;
+    text-align: center;
+
+}
+
+.css-left p {
+    color: black;
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.css-left .btn-top, .css-left .btn-down {
+    margin: 30px auto;
+    display: block;
+    padding: 8px 16px;
+}
+
+.section-css .btn-top {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 18px;
+    width: 150px;
+    border-radius: 25px;
+}
+
+.section-css .btn-down {
+    background-color: #282A35;
+    color: white;
+    font-size: 18px;
+    width: 150px;
+    border-radius: 25px;
+}
+
+.section-css .css-right {
+    width: 40%;
+    height: 70%;
+    text-align: left;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    background-color: #E7E9EB;
+
+}
+
+.css-right p {
+    font-family: Regular;
+    font-size: 24px;
+    padding: 5px;
+    margin: 20px 5px;
+}
+
+.css-right .css-example {
+    width: 95%;
+    height: 220px;
+    border-left: 4px solid #04AA6D;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+
+.css-right a {
+    background-color: #04AA6D;
+    margin: 20px;
+    display: block;
+    width: 32%;
+    text-align: center;
+    padding: 11px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.css-right .text-example {
+    font-family: Regular;
+    padding: 9px;
+    font-size: 16px;
+
+}
+
+.css-right .text-example span {
+    font-family: Regular;
+}
+
+.css-left .btn-top:hover {
+    background-color: #059862;
+
+}
+
+.css-left .btn-down:hover {
+    background-color: black;
+
+}
+
+.css-right .Example a:hover {
+    background-color: #059862;
+
+}
+
+/*End Css*/
+/*Start js section*/
+.section-js a {
+    color: #FFFFFF;
+
+}
+
+.section-js .patent {
+    color: #FFFFFF;
+    background-color: #FFF4A3;
+    width: 100%;
+    height: 540px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.section-js .js-left {
+    width: 40%;
+    height: 60%;
+}
+
+.js-left h1 {
+    color: black;
+    font-size: 70px;
+    margin: 2px 0px 20px 2px;
+    text-align: center;
+
+}
+
+.js-left p {
+    color: black;
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.js-left .btn-top, .js-left .btn-down {
+    margin: 30px auto;
+    display: block;
+    padding: 10px 16px;
+}
+
+.section-js .btn-top {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 18px;
+    width: 200px;
+    border-radius: 25px;
+}
+
+.section-js .btn-down {
+    background-color: #282A35;
+    color: white;
+    font-size: 18px;
+    width: 200px;
+    border-radius: 25px;
+}
+
+.section-js .js-right {
+    width: 40%;
+    height: 70%;
+    text-align: left;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    background-color: #E7E9EB;
+
+}
+
+.js-right p {
+    font-family: Regular;
+    font-size: 24px;
+    padding: 5px;
+    margin: 20px 5px;
+}
+
+.js-right .js-example {
+    width: 95%;
+    height: 220px;
+    border-left: 4px solid #04AA6D;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+
+.js-right a {
+    background-color: #04AA6D;
+    margin: 20px;
+    display: block;
+    width: 32%;
+    text-align: center;
+    padding: 11px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.js-right .text-example {
+    font-family: Regular;
+    padding: 9px;
+    font-size: 16px;
+
+}
+
+.js-right .text-example span {
+    font-family: Regular;
+}
+
+.js-left .btn-top:hover {
+    background-color: #059862;
+
+}
+
+.js-left .btn-down:hover {
+    background-color: black;
+
+}
+
+.js-right .Example a:hover {
+    background-color: #059862;
+
+}
+
+/*End js*/
+/*Start Section python*/
+.section-python a {
+    color: #FFFFFF;
+
+}
+
+.section-python .patent {
+    color: #FFFFFF;
+    background-color: #282A35;
+    width: 100%;
+    height: 540px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.section-python .python-left {
+    width: 40%;
+    height: 60%;
+}
+
+.python-left h1 {
+    font-size: 100px;
+    margin: 2px 0px 20px 2px;
+    text-align: center;
+
+}
+
+.python-left p {
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.python-left .btn-top, .python-left .btn-down {
+    margin: 30px auto;
+    display: block;
+    padding: 8px 16px;
+}
+
+.section-python .btn-top {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 18px;
+    width: 150px;
+    border-radius: 25px;
+}
+
+.section-python .btn-down {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    width: 150px;
+    border-radius: 25px;
+}
+
+.section-python .python-right {
+    width: 40%;
+    height: 70%;
+    text-align: left;
+    border-radius: 5px;
+    color: black;
+
+    background-color: #e3e3e3;
+
+}
+
+.python-right p {
+    font-family: Regular;
+    font-size: 24px;
+    padding: 5px;
+    margin: 20px 5px;
+}
+
+.python-right .python-example {
+    width: 95%;
+    height: 220px;
+    border-left: 4px solid #04AA6D;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+
+.python-right a {
+    background-color: #04AA6D;
+    margin: 20px;
+    display: block;
+    width: 32%;
+    text-align: center;
+    padding: 11px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.python-right .text-example {
+    font-family: Regular;
+    padding: 9px;
+    font-size: 16px;
+
+}
+
+.python-right .text-example span {
+    font-family: Regular;
+}
+
+.python-left .btn-top:hover {
+    background-color: #059862;
+
+}
+
+.python-left .btn-down:hover {
+    background-color: #E7E9EB;
+
+}
+
+.python-right .Example a:hover {
+    background-color: #059862;
+
+}
+
+/*End python*/
+/*footer*/
+
+.section-footer {
+    width: 100%;
+    height: 450px;
+    background-color: #282A35;
+    position: relative;
+}
+
+.nav-footer li {
+    display: inline-block;
+
+
+}
+
+.footer-menu-left a {
+    color: black;
+}
+
+.footer-menu-left {
+
+    float: left;
+    margin-left: 34px;
+}
+
+.footer-menu-left li {
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 5px
+}
+
+.footer-menu-left li:hover {
+    border-radius: 3px;
+    background-color: #cfcfcf;
+    transition: 0.5s all ease;
+}
+
+.footer-menu-right {
+
+    float: right;
+    margin-right: 34px
+
+}
+
+.footer-menu-right li {
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer-menu-right a {
+    color: #FFFFFF;
+}
+
+.footer-menu-right a:hover {
+    color: #4CAF50;
+}
+
+.social-media {
+    display: block;
+    position: absolute;
+    right: 2%;
+    top: 28%;
+}
+
+.list-social-media li {
+    display: inline-block;
+    padding: 5px 15px;
+
+
+}
+
+.list-social-media i {
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 8px;
+}
+
+.footer-btn a {
+    width: 40%;
+    display: block;
+    position: absolute;
+    left: 29%;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 40px;
+    color: #FFFFFF;
+    background-color: #04AA6D;
+    padding: 10px 5px;
+    border-radius: 25px;
+}
+
+.footer-like a {
+    width: 60px;
+    height: 30px;
+    color: #FFFFFF;
+    display: block;
+    left: 48%;
+    bottom: 112px;
+    position: absolute;
+
+}
+
+.footer-like i {
+    font-size: 40px;
+}
+
+.footer-text p {
+    position: absolute;
+    color: #FFFFFF;
+    top: 48%;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.footer-text p a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-text p a:hover {
+    color: #4CAF50;
+    transition: 0.1s all ease;
+}
+
+.footer-btn a:hover {
+    background-color: #0c4128;
+    transition: 0.3s all ease;
+}
+
+.footer-like i:hover {
+    color: #4CAF50;
+    transition: 0.1s all ease;
+}
+
+.list-social-media li a i:hover {
+
+    background-color: white;!important;
+    color: black;!important;
+    border-radius: 5px;!important;
+    transition: 0.5s all ease;!important;
+}
+/* end footer*/
